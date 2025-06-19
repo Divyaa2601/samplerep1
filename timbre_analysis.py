@@ -82,7 +82,7 @@ if __name__ == "__main__":
     features = extract_features(y, sr)
     timbre_profile = estimate_timbre_percentages(features)
 
-    # Output
+    # Output audio
     print("\nTimbre Profile (%):")
     for k, v in timbre_profile.items():
         print(f"{k}: {v}%")
